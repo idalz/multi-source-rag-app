@@ -1,6 +1,6 @@
 # Multi-Source RAG App
 
-An intelligent question-answering app powered by LangChain, OpenAI, Pinecone, and Streamlit.
+An intelligent question-answering app powered by **LangChain**, **OpenAI**, **Pinecone**, and **Streamlit**.
 Users can upload their own documents (PDF), ask any question, and get AI-generated answers using the PDF, Arxiv and Wikipedia.
 
 ---
