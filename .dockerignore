@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+*.db
+*.log
+tests/
+pytest.ini
+app_screenshots/
