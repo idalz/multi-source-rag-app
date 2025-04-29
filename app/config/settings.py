@@ -1,6 +1,7 @@
 from pydantic import BaseSettings
 
 class Settings(BaseSettings):
+    OPENAI_MODEL: str
     OPENAI_API_KEY: str
     PINECONE_API_KEY: str
     PINECONE_ENVIRONMENT: str
@@ -9,5 +10,4 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
 
-# Instantiate
 settings = Settings()
