@@ -5,3 +5,5 @@ langchain-pinecone
 streamlit
 python-dotenv 
 pydantic
+pydantic-settings
+faiss-cpu

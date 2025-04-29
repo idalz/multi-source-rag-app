@@ -1,17 +1,9 @@
-import pinecone
 from app.config.settings import settings
 from langchain_pinecone import PineconeVectorStore
-from langchain_community.embeddings import OpenAIEmbeddings
-
-def init_pinecone():
-    """Initialize Pinecone with API key and environment."""
-    pinecone.init(
-        api_key=settings.PINECONE_API_KEY,
-        environment=settings.PINECONE_ENVIRONMENT,
-    )
+from langchain_openai import OpenAIEmbeddings
 
 def get_vectorstore():
-    """Create or connect to an existing Pinecone vectorstore."""
+    """Create or connect to a Pinecone vectorstore (modern way)."""
     embeddings = OpenAIEmbeddings(
         openai_api_key=settings.OPENAI_API_KEY
     )

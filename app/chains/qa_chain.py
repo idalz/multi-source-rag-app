@@ -33,12 +33,12 @@ def retrieve_context(question: str, vectorstore) -> tuple[Optional[str], List[Do
         return "\n\n".join(doc.page_content for doc in docs), docs
 
     # 2. Arxiv
-    arxiv_docs = get_arxiv_retriever().get_relevant_documents(question)
+    arxiv_docs = get_arxiv_retriever().invoke(question)
     if arxiv_docs:
         return "\n\n".join(doc.page_content for doc in arxiv_docs), arxiv_docs
 
     # 3. Wikipedia
-    wiki_docs = get_wikipedia_retriever().get_relevant_documents(question)
+    wiki_docs = get_wikipedia_retriever().invoke(question)
     if wiki_docs:
         return "\n\n".join(doc.page_content for doc in wiki_docs), wiki_docs
 
