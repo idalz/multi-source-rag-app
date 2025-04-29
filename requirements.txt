@@ -6,4 +6,4 @@ streamlit
 python-dotenv 
 pydantic
 pydantic-settings
-faiss-cpu
+pypdf
