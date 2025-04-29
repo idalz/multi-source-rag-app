@@ -15,7 +15,7 @@ st.title("📚 Multi-Source Agent Assistant")
 st.markdown(
     """
     Upload a PDF file and ask any question.
-    The AI agent will decide whether to use your file (📄), Arxiv (🧠), or Wikipedia (🌐).
+    The AI agent will decide whether to use your file, Arxiv, or Wikipedia.
     """
 )
 
