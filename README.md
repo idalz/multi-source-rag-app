@@ -83,7 +83,7 @@ PINECONE_INDEX_NAME=<your-pinecone-index-name>
 
 5. Docker Setup:
 
-Run the following command to start the application  container:
+Run the following command to build and start the application container:
 
 ```bash
 docker-compose up --build
