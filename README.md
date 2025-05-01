@@ -1,7 +1,6 @@
 # Multi-Source RAG App
-
-An intelligent question-answering app powered by **LangChain**, **OpenAI**, **Pinecone**, and **Streamlit**.
-Users can upload their own documents (PDF), ask any question, and get AI-generated answers using the PDF, Arxiv and Wikipedia.
+ 
+An intelligent question-answering app using **LangChain agents** with **OpenAI**, **Pinecone**, and **Streamlit**. Supports PDF uploads and fallbacks to Arxiv or Wikipedia via **RAG** and custom retrievers, all orchestrated through a multi-tool agent system. 
 
 ---
 ## Contents
@@ -112,4 +111,4 @@ pip install pytest
 ---
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
